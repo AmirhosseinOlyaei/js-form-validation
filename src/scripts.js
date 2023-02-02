@@ -20,16 +20,16 @@ accountFormElement.addEventListener("submit", function (event) {
   } else if (fullName.length <= 3) {
     messageElement.innerHTML = `<p>Error message: Name is less than 3 characters.</p>`;
   } else {
-    messageElement.innerHTML = `<p>Name: <b>${fullName}</b></p>`;
+    messageElement.innerHTML = `<p>Name: <strong>${fullName}</strong></p>`;
   }
 
   if (emailValue.indexOf("@") === -1) {
     console.log("Email input does not contains @");
-    emailMessageElement.innerHTML = `<p>Error message: Email address input <b>${emailValue}</b> does not contains @</p>`;
+    emailMessageElement.innerHTML = `<p>Error message: Email address input <strong>${emailValue}</strong> does not contains @</p>`;
 
   } else {
     console.log("Email input contains @");
-    emailMessageElement.innerHTML = `<p>Email address input <b>${emailValue}</b> contains @</p>`;
+    emailMessageElement.innerHTML = `<p>Email address input <strong>${emailValue}</strong> contains @</p>`;
   }
 });
 
